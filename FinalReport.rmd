@@ -48,6 +48,21 @@ If not, then whose view differs from whom??
 
 ## Now with The Most data (fewer variables gives more data points)
 
+```{r}
+dd2 <- mydata %>% group_by(race,cappun) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=race,y=count,fill=cappun))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+  The Descriptive results data show white have over 1000 in favor for capital than blacks. IN addition the other in favor for capital punishment. ON the percentage chart the data show that white is 65% and other is 55% in favor for capital punishment than the black race. 
 
 
 ### Numerical Descriptive Results
