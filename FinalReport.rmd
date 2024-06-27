@@ -65,7 +65,7 @@ basicCC + geom_bar(stat="identity", position = "dodge")
   The Descriptive results data show white have over 1000 in favor for capital than blacks. IN addition the other in favor for capital punishment. ON the percentage chart the data show that white is 65% and other is 55% in favor for capital punishment than the black race. 
 
 
-### Numerical Descriptive Results
+### 
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
@@ -77,14 +77,16 @@ rowPerc(table2)
 colPerc(table2)
 ```
 The Numerical Result Data shows white is 65% in favor to 35% oppose, other is 55% in favor to oppose whereas black 43% in favor to 57% in oppose of capital punishment.  
+
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-`
+```{r}
+fisherXY(mydata$race, mydata$cappun, confL = .01, printAll= "TRUE")
+```
+ After using the fisher test for the numerical results it gives us the difference of between white, blacks, and others of capital punishment. This graph showed the result favor and the oppose race which blacks being the less favor and the most oppose race. Creating the odd of ratio of 0.604
 
-
-## More data version
 
 
 # Discussion and Conclusion
