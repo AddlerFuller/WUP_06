@@ -92,3 +92,4 @@ fisherXY(mydata$race, mydata$cappun, confL = .01, printAll= "TRUE")
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+To finish up this discussion we were comparing other race and the data of them which one is favor and oppose, white was the less oppose and most favor beside black being the opposite of white being the most oppose and less favor race, but other being inbetween of being favor and oppose. 
